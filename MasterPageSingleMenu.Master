@@ -26,8 +26,6 @@
                         <telerik:RadMenuItem IsSeparator="true" />
                         <telerik:RadMenuItem Text="Сотрудники" NavigateUrl="Sensors.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
-                        <telerik:RadMenuItem Text="Графики" NavigateUrl="ChartPage.aspx" />
-                        <telerik:RadMenuItem IsSeparator="true" />
                         <%--<telerik:RadMenuItem Text="chch" NavigateUrl="chch.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />--%>
                         <telerik:RadMenuItem Text="Выход" NavigateUrl="LogOut.aspx" />
