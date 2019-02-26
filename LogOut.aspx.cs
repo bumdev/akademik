@@ -7,11 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace akademik_app
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class LogOut : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Cookies["name"].Expires = DateTime.Now;
+            Response.Cookies["pass"].Expires = DateTime.Now;
+            Response.Redirect("Login.aspx");
         }
     }
 }

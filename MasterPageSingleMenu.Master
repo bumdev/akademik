@@ -15,14 +15,24 @@
         <telerik:RadScriptManager runat="server"></telerik:RadScriptManager>
         <div id="wrapper">
             <a href="#" class="logo">
-                <img src="images/logo.png" alt="site logo" />
+                <img src="images/china_cock.png" alt="site logo" />
             </a>
             <div class="header">
                 <telerik:RadMenu ID="RadMenu1" CssClass="mainMenu" runat="server" RenderMode="Auto">
                     <Items>
-                        <telerik:RadMenuItem Text="Home" NavigateUrl="Default.aspx" />
+                        <telerik:RadMenuItem Text="Главная" NavigateUrl="Home.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
-                        <telerik:RadMenuItem Text="Grid Page" NavigateUrl="Grid.aspx" />
+                        <telerik:RadMenuItem Text="Основная информация" NavigateUrl="Archive.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="Сотрудники" NavigateUrl="Sensors.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="Графики" NavigateUrl="ChartPage.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <%--<telerik:RadMenuItem Text="chch" NavigateUrl="chch.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />--%>
+                        <telerik:RadMenuItem Text="Выход" NavigateUrl="LogOut.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <%--<telerik:RadMenuItem Text="Grid Page" NavigateUrl="Grid.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
                         <telerik:RadMenuItem Text="ListView Page" NavigateUrl="ListView.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
@@ -36,7 +46,7 @@
                         <telerik:RadMenuItem IsSeparator="true" />
                         <telerik:RadMenuItem Text="..." />
                         <telerik:RadMenuItem IsSeparator="true" />
-                        <telerik:RadMenuItem Text="Contacts" />
+                        <telerik:RadMenuItem Text="Contacts" />--%>
                     </Items>
                 </telerik:RadMenu>
             </div>
@@ -46,7 +56,7 @@
             </asp:ContentPlaceHolder>
             <hr style="margin-top: 40px" />
             <div class="footer">
-               Footer: © 2002-2015 Company Inc, 201 Jones Rd, Waltham, MA 03451
+               
             </div>
         </div>
     </form>

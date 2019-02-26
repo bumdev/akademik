@@ -164,11 +164,12 @@
     <Content Include="Controls\MessageBox.ascx" />
     <Content Include="Controls\sub\NotificationLabel.ascx" />
     <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
     <Content Include="MasterPage.Master" />
     <Content Include="MasterPageSingleMenu.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="Grid.aspx" />
     <Content Include="images\Chrysanthemum.jpg" />
     <Content Include="images\Desert.jpg" />
@@ -188,8 +189,39 @@
     <Content Include="images\Thumbnails\Tulips.jpg" />
     <Content Include="images\Tulips.jpg" />
     <Content Include="ListView.aspx" />
+    <None Include="scripts\amplify-vsdoc.js" />
+    <Content Include="scripts\amplify.js" />
+    <Content Include="scripts\amplify.min.js" />
+    <Content Include="scripts\amplify\amplify.core.js" />
+    <Content Include="scripts\amplify\amplify.core.min.js" />
+    <Content Include="scripts\amplify\amplify.request.js" />
+    <Content Include="scripts\amplify\amplify.request.min.js" />
+    <Content Include="scripts\amplify\amplify.store.js" />
+    <Content Include="scripts\amplify\amplify.store.min.js" />
+    <Content Include="scripts\GPL-LICENSE.txt" />
+    <None Include="scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="scripts\jquery-1.4.1.js" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <None Include="scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.8.2.js" />
+    <Content Include="scripts\jquery-1.8.2.min.js" />
+    <Content Include="scripts\jquery-ui-1.9.0.js" />
+    <Content Include="scripts\jquery-ui-1.9.0.min.js" />
+    <Content Include="scripts\json2.js" />
+    <Content Include="scripts\json2.min.js" />
+    <Content Include="scripts\juice.js" />
+    <Content Include="scripts\juice.min.js" />
+    <Content Include="scripts\menu\jquery-latest.js" />
+    <Content Include="scripts\menu\jquery.detachit.js" />
+    <Content Include="scripts\menu\jquery.jlnav.js" />
+    <Content Include="scripts\menu\jquery.js" />
+    <Content Include="scripts\menu\jquery_002.js" />
+    <Content Include="scripts\MIT-LICENSE.txt" />
+    <Content Include="scripts\openimage.js" />
+    <Content Include="scripts\README.txt" />
     <Content Include="scripts\scripts.js" />
     <Content Include="styles\base.css" />
+    <Content Include="styles\buttons.css" />
     <Content Include="styles\default.css" />
     <Content Include="styles\grid.css" />
     <Content Include="styles\listView.css" />
@@ -288,12 +320,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Grid.aspx.cs">
       <DependentUpon>Grid.aspx</DependentUpon>
@@ -309,6 +341,13 @@
     </Compile>
     <Compile Include="ListView.aspx.designer.cs">
       <DependentUpon>ListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -336,6 +375,8 @@
     <Content Include="App_Data\RadSpell\fr-FR.tdf" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="styles\style.css" />
+    <Content Include="styles\test.css" />
     <Content Include="web.config" />
     <Content Include="Admin\admin.master" />
     <Content Include="Admin\WP.Master" />

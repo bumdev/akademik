@@ -17,7 +17,7 @@ namespace akademik_app
             {
                 if (IsLogin())
                 {
-                    Response.Redirect("Direction.aspx");
+                    Response.Redirect("Home.aspx");
                 }
             }
         }
@@ -38,7 +38,7 @@ namespace akademik_app
                 name.Expires = DateTime.Now.AddYears(1);
                 pass.Expires = DateTime.Now.AddYears(1);
 
-                Response.Redirect("Direction.aspx");
+                Response.Redirect("Home.aspx");
             }
             else
             {
