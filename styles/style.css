@@ -11,7 +11,7 @@ a img { border: 0px none transparent; }*/
 
 p { margin: 0 0 18px 0; }
 
-.LogoOverlay { margin: 0 0 0 0px; width: 388px; height: 170px; display: block; position: absolute; top: 0px;background-image:url(../images/OverLaychina_cock.png); background-repeat:no-repeat;}
+.LogoOverlay { margin: 0 0 0 0px; width: 388px; height: 170px; display: block; position: absolute; top: 0px;background-image:url(../images/OverLaylogo_akadem.png); background-repeat:no-repeat;}
 html>/* */body .LogoOverlay { margin-left: 8px; }
 .TextBox { border: 1px solid #949494; }
 

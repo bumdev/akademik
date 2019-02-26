@@ -15,16 +15,16 @@
         <telerik:RadScriptManager runat="server"></telerik:RadScriptManager>
         <div id="wrapper">
             <a href="#" class="logo">
-                <img src="images/china_cock.png" alt="site logo" />
+                <img src="images/logo_one.png" alt="site logo" />
             </a>
             <div class="header">
                 <telerik:RadMenu ID="RadMenu1" CssClass="mainMenu" runat="server" RenderMode="Auto">
                     <Items>
                         <telerik:RadMenuItem Text="Главная" NavigateUrl="Home.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
-                        <telerik:RadMenuItem Text="Основная информация" NavigateUrl="Archive.aspx" />
+                        <telerik:RadMenuItem Text="Основная информация" NavigateUrl="Dossier.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
-                        <telerik:RadMenuItem Text="Сотрудники" NavigateUrl="Sensors.aspx" />
+                        <telerik:RadMenuItem Text="Сотрудники" NavigateUrl="Employees.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
                         <%--<telerik:RadMenuItem Text="chch" NavigateUrl="chch.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />--%>

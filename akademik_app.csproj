@@ -163,6 +163,11 @@
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="Controls\MessageBox.ascx" />
     <Content Include="Controls\sub\NotificationLabel.ascx" />
+    <Content Include="Dossier.aspx" />
+    <Content Include="Employees.aspx" />
+    <Content Include="images\logo_akadem.png" />
+    <Content Include="images\logo_akadem_1.png" />
+    <Content Include="images\logo_one.png" />
     <Content Include="Login.aspx" />
     <Content Include="LogOut.aspx" />
     <Content Include="MasterPage.Master" />
@@ -313,6 +318,20 @@
     <Compile Include="Controls\sub\NotificationLabel.ascx.designer.cs">
       <DependentUpon>NotificationLabel.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Dossier.aspx.cs">
+      <DependentUpon>Dossier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dossier.aspx.designer.cs">
+      <DependentUpon>Dossier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -407,7 +426,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
