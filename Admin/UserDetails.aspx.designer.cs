@@ -40,15 +40,6 @@ namespace akademik_app {
         protected global::System.Web.UI.WebControls.HiddenField hfID;
         
         /// <summary>
-        /// ScriptManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
-        /// <summary>
         /// tbName control.
         /// </summary>
         /// <remarks>
@@ -83,15 +74,6 @@ namespace akademik_app {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbPasswordConfirm;
-        
-        /// <summary>
-        /// cbxServices control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.ComboBox cbxServices;
         
         /// <summary>
         /// cbIsActive control.
@@ -155,14 +137,5 @@ namespace akademik_app {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox lbUserPermissions;
-        
-        /// <summary>
-        /// dsServices control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource dsServices;
     }
 }

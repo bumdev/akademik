@@ -47,6 +47,49 @@
                         
                         <telerik:RadButton runat="server" ID="MailButt" Text="Обновить тип почты" ButtonType="SkinnedButton" OnClick="Mail_OnClick"></telerik:RadButton>
                     </telerik:LayoutColumn>--%>
+                    <%--<telerik:LayoutColumn runat="server" Span="4" SpanMd="12" HiddenXs="true">
+                        <a href="Dossier.aspx">
+                        <div style="width:230px; height:230px; border:1px solid white; float:left; margin-top: 15px; margin-right: 15px; background-color:White; border-radius: 250px;" id="box1">
+                            <span style="font-size:16px;position:absolute; font-family:Verdana; margin-left:15px; margin-top:230px; color: black;">Основная информация</span>
+        
+                            <div style="width:128px; height:128px; background-image:url('images/dossier (1).png'); margin-left:50px;margin-top:50px; border:0px solid black;"></div>
+                        </div>
+                    </a>
+                    </telerik:LayoutColumn>--%>
+                 
+                    <telerik:LayoutColumn runat="server" Span="4" SpanMd="12" HiddenXs="true">
+                        <a href="Admin/Default.aspx">
+                        <div style="width:230px; height:230px; border:1px solid white; float:left; margin-top: 15px; margin-right: 15px; background-color:White; border-radius: 250px;" id="box1">
+                            <span style="font-size:16px;position:absolute; font-family:Verdana; margin-left:15px; margin-top:230px; color: black;">Админ панель</span>
+        
+                            <div style="width:128px; height:128px; background-image:url('images/admin.png'); margin-left:0px;margin-top:50px; border:0px solid black;"></div>
+                        </div>
+                    </a>
+                    </telerik:LayoutColumn>
+                    <telerik:LayoutColumn runat="server" Span="4" SpanMd="12" HiddenXs="true">
+                        <a href="Synchronization.aspx">
+                        <div style="width:230px; height:230px; border:1px solid white; float:left; margin-top: 15px; margin-right: 15px; background-color:White; border-radius: 250px;" id="box1">
+                            <span style="font-size:16px;position:absolute; font-family:Verdana; margin-left:15px; margin-top:230px; color: black;">Синхронизация</span>
+        
+                            <div style="width:128px; height:128px; background-image:url('images/cloud-computing.png'); margin-left:10px;margin-top:50px; border:0px solid black;"></div>
+                        </div>
+                    </a>
+                    </telerik:LayoutColumn>
+                    
+                    <telerik:LayoutColumn runat="server" Span="4" SpanMd="12" HiddenXs="true">
+                        <a href="LogOut.aspx">
+                        <div style="width:230px; height:230px; border:1px solid white; float:left; margin-top: 15px; margin-right: 15px; background-color:White; border-radius: 250px;" id="box1">
+                            <span style="font-size:16px;position:absolute; font-family:Verdana; margin-left:15px; margin-top:230px; color: black;">Выход</span>
+        
+                            <div style="width:128px; height:128px; background-image:url('images/exit (1).png'); margin-left:-20px;margin-top:50px; border:0px solid black;"></div>
+                        </div>
+                    </a>
+                    </telerik:LayoutColumn>
+                    
+                    
+                   <%-- <a href="#" class="logo">
+                                <img src="images/logo_akadem.png" alt="site logo"/>
+                            </a>--%>
                     
                     
                 </Columns>

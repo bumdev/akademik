@@ -26,6 +26,8 @@
                         <telerik:RadMenuItem IsSeparator="true" />
                         <telerik:RadMenuItem Text="Сотрудники" NavigateUrl="Employees.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="Админ панель" NavigateUrl="Admin/Default.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
                         <%--<telerik:RadMenuItem Text="chch" NavigateUrl="chch.aspx" />
                         <telerik:RadMenuItem IsSeparator="true" />--%>
                         <telerik:RadMenuItem Text="Выход" NavigateUrl="LogOut.aspx" />

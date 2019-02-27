@@ -17,8 +17,6 @@ namespace akademik_app
             if (!Page.IsPostBack)
             {
                 //LoadGrop();
-                //LoadService();
-                LoadServices();
                 if (Request["New"] == null && Request["UserID"] == null)
                 {
                     Response.Redirect("UserListing.aspx");
@@ -32,8 +30,6 @@ namespace akademik_app
                     if (Request["UserID"] != null)
                     {
                         //ddlGroup.Enabled = false;
-                        //ddlService.Enabled = false;
-                        cbxServices.Enabled = false;
                         panPermissions.Visible = true;
                         int id = Utilities.ConvertToInt(Request["UserID"]);
                         LoadData(id);
@@ -44,41 +40,17 @@ namespace akademik_app
             }
         }
 
-        /*private void LoadGrop()
-        {
-            ddlGroup.Items.Clear();
-            CustomRetrieverDO crDO = new CustomRetrieverDO();
-            UniversalEntity ue = new UniversalEntity();
-            ue = crDO.RetrieveGroups();
-            foreach (ArrayList al in ue)
-            {
-                ddlGroup.Items.Add(new ListItem(al[1].ToString(), al[0].ToString()));
-            }
-        }*/
-
-        private void LoadServices()
-        {
-            cbxServices.Items.Clear();
-            CustomRetrieverDO cDO = new CustomRetrieverDO();
-            UniversalEntity ue = new UniversalEntity();
-            ue = cDO.RetrieveServices();
-            foreach (ArrayList al in ue)
-            {
-                cbxServices.Items.Add(new ListItem(al[0].ToString(), al[1].ToString()));
-            }
-        }
-
-        /*private void LoadService()
-        {
-            ddlService.Items.Clear();
-            CustomRetrieverDO cDO = new CustomRetrieverDO();
-            UniversalEntity ue = new UniversalEntity();
-            ue = cDO.RetrieveServices();
-            foreach (ArrayList al in ue)
-            {
-                ddlService.Items.Add(new ListItem(al[1].ToString(), al[0].ToString()));
-            }
-        }*/
+        //private void LoadGrop()
+        //{
+        //    ddlGroup.Items.Clear();
+        //    CustomRetrieverDO crDO = new CustomRetrieverDO();
+        //    UniversalEntity ue = new UniversalEntity();
+        //    ue = crDO.RetrieveGroups();
+        //    foreach (ArrayList al in ue)
+        //    {
+        //        ddlGroup.Items.Add(new ListItem(al[1].ToString(), al[0].ToString()));
+        //    }
+        //}
 
         private void LoadPermissionListUser(int id)
         {
@@ -128,8 +100,7 @@ namespace akademik_app
                 cbIsActive.Checked = u.IsActive;
                 hfUserPassword.Value = u.UserPassword;
                 hfID.Value = u.ID.ToString();
-                //ddlGroup.SelectedValue = u.Location.ToString();
-                cbxServices.SelectedValue = u.SerivceID.ToString();
+               // ddlGroup.SelectedValue = u.Location.ToString();
             }
         }
 
@@ -146,7 +117,6 @@ namespace akademik_app
             u.IsActive = cbIsActive.Checked;
             u.ID = Utilities.ConvertToInt(hfID.Value);
             //u.Location = Utilities.ConvertToInt(ddlGroup.SelectedValue);
-            u.SerivceID = Utilities.ConvertToInt(cbxServices.SelectedValue);
             return u;
         }
 

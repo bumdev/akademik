@@ -29,7 +29,7 @@
         <asp:BoundField HeaderText="ИД" DataField="UserID" SortExpression="UserID" />
         <asp:BoundField HeaderText="Имя" DataField="UserName" SortExpression="UserName" />
         <asp:BoundField HeaderText="Логин" DataField="UserLogin" SortExpression="UserLogin" />
-        <asp:BoundField HeaderText="Отдел" DataField="service_name" SortExpression="service_name" />
+        
 		<asp:TemplateField HeaderText="Статус" SortExpression="IsActive">
 			<ItemTemplate>	
                 <asp:CheckBox runat="server" ID="cbIsActive" Checked='<%# Eval("IsActive")%>' Enabled="false" />                						

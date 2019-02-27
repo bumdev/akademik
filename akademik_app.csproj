@@ -114,17 +114,10 @@
   <ItemGroup>
     <Content Include="Admin\AdminLogOut.aspx" />
     <Content Include="Admin\Default.aspx" />
-    <Content Include="Admin\DeviceAdd.aspx" />
-    <Content Include="Admin\LocationAdd.aspx" />
     <Content Include="Admin\Panel.aspx" />
     <Content Include="Admin\Permissions.aspx" />
-    <Content Include="Admin\ReportRate.aspx" />
-    <Content Include="Admin\ServiceAdd.aspx" />
-    <Content Include="Admin\Statements.aspx" />
     <Content Include="Admin\UserDetails.aspx" />
     <Content Include="Admin\UserListing.aspx" />
-    <Content Include="Admin\WPAdd.aspx" />
-    <Content Include="Admin\WPList.aspx" />
     <Content Include="App_Data\RadCaptcha\0.wav" />
     <Content Include="App_Data\RadCaptcha\1.wav" />
     <Content Include="App_Data\RadCaptcha\2.wav" />
@@ -165,9 +158,47 @@
     <Content Include="Controls\sub\NotificationLabel.ascx" />
     <Content Include="Dossier.aspx" />
     <Content Include="Employees.aspx" />
+    <Content Include="images\admin.jpg" />
+    <Content Include="images\admin.png" />
+    <Content Include="images\administrator.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\btn_form_left.gif" />
+    <Content Include="images\btn_form_right.gif" />
+    <Content Include="images\btn_green_bg.gif" />
+    <Content Include="images\btn_green_flat_arrow_left.gif" />
+    <Content Include="images\btn_green_flat_arrow_right.gif" />
+    <Content Include="images\business_users.png" />
+    <Content Include="images\business_users_add.png" />
+    <Content Include="images\check.jpeg" />
+    <Content Include="images\cloud-computing.png" />
+    <Content Include="images\collaboration.png" />
+    <Content Include="images\confidential %281%29.png" />
+    <Content Include="images\dossier %281%29.png" />
+    <Content Include="images\dossier.png" />
+    <Content Include="images\employee %281%29.png" />
+    <Content Include="images\exit %281%29.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\free_toolbar_icons_16x16_black.png" />
+    <Content Include="images\help.png" />
+    <Content Include="images\icons\close.png" />
+    <Content Include="images\icons\close_white.png" />
+    <Content Include="images\icons\print.png" />
+    <Content Include="images\instal.png" />
+    <Content Include="images\Key-Icon-250x250.jpg" />
+    <Content Include="images\logout-icon.png" />
     <Content Include="images\logo_akadem.png" />
     <Content Include="images\logo_akadem_1.png" />
     <Content Include="images\logo_one.png" />
+    <Content Include="images\manType.jpg" />
+    <Content Include="images\networking.png" />
+    <Content Include="images\pw_maze_black.png" />
+    <Content Include="images\siz.png" />
+    <Content Include="images\suggestions\dog1_32.png" />
+    <Content Include="images\suggestions\dog2_32.png" />
+    <Content Include="images\suggestions\dog3_32.png" />
+    <Content Include="images\suggestions\dog4_32.png" />
+    <Content Include="images\suggestions\dog5_32.png" />
+    <Content Include="images\suggestions\loadinfo_net.gif" />
     <Content Include="Login.aspx" />
     <Content Include="LogOut.aspx" />
     <Content Include="MasterPage.Master" />
@@ -194,6 +225,9 @@
     <Content Include="images\Thumbnails\Tulips.jpg" />
     <Content Include="images\Tulips.jpg" />
     <Content Include="ListView.aspx" />
+    <Content Include="images\icons\Thumbs.db" />
+    <Content Include="images\suggestions\Thumbs.db" />
+    <Content Include="Admin\admin.master" />
     <None Include="scripts\amplify-vsdoc.js" />
     <Content Include="scripts\amplify.js" />
     <Content Include="scripts\amplify.min.js" />
@@ -397,14 +431,15 @@
     <Content Include="styles\style.css" />
     <Content Include="styles\test.css" />
     <Content Include="web.config" />
-    <Content Include="Admin\admin.master" />
-    <Content Include="Admin\WP.Master" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\menu\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -426,7 +461,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
