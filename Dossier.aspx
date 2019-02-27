@@ -21,7 +21,7 @@
         onneeddatasource="radgridDevice_NeedDataSource" CssClass="rad" AllowPaging="True"  Font-Names="Arial Unicode MS"
         Culture="ru-RU" oninsertcommand="radgrid_InsertCommand" ClientEvents-OnRequestStart="onRequestStart"
         AllowAutomaticInserts="true" ondeletecommand="radgrid_DeleteCommand" onupdatecommand="radgridServices_UpdateCommand"
-        onitemdatabound="radgrid_ItemDataBound" OnItemCommand="radgrid_itemcommand"
+        onitemdatabound="radgrid_ItemDataBound" OnItemCommand="radgrid_itemcommand" 
         AllowSorting="true" RenderMode="Auto">
       
       <ClientSettings Selecting-AllowRowSelect="true" EnablePostBackOnRowClick="true" >
@@ -33,7 +33,7 @@
     </ExportSettings>
       
         <MasterTableView EditMode="PopUp" IsFilterItemExpanded="True" EditFormSettings-PopUpSettings-Width="900px" DataKeyNames="ID" Width="100%" CommandItemDisplay="Top" AllowAutomaticUpdates="true" Name="Dossier"  AllowFilteringByColumn="true" >
-            <CommandItemSettings ShowAddNewRecordButton="true" ShowRefreshButton="False" />
+            <CommandItemSettings ShowAddNewRecordButton="true" ShowRefreshButton="False" AddNewRecordText="Добавить новую запись" />
             
             <Columns>
                 <telerik:GridEditCommandColumn UniqueName="EditCommandColumn" ButtonType="ImageButton"></telerik:GridEditCommandColumn> 
@@ -78,7 +78,8 @@
                 
         </Columns>
         <EditFormSettings>
-                <EditColumn ButtonType="ImageButton" />            
+                <EditColumn ButtonType="ImageButton" />
+                        
         </EditFormSettings>
         
 

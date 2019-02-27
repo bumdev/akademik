@@ -33,7 +33,7 @@
     </ExportSettings>
       
         <MasterTableView EditMode="PopUp" IsFilterItemExpanded="True" EditFormSettings-PopUpSettings-Width="900px" DataKeyNames="ID" Width="100%" CommandItemDisplay="Top" AllowAutomaticUpdates="true" Name="Employees"  AllowFilteringByColumn="true" >
-            <CommandItemSettings ShowAddNewRecordButton="true" ShowRefreshButton="False" />
+            <CommandItemSettings ShowAddNewRecordButton="true" AddNewRecordText="Добавить сотрудника" ShowRefreshButton="False" />
             
             <Columns>
                 <telerik:GridEditCommandColumn UniqueName="EditCommandColumn" ButtonType="ImageButton"></telerik:GridEditCommandColumn> 
