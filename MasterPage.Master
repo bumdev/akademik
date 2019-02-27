@@ -60,7 +60,7 @@
                     <Columns>
                         <%--Sidebar--%>
                         <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
-                            <telerik:RadMenu ID="RadMenu2" CssClass="sidebar" Flow="Vertical" runat="server" >
+                            <%--<telerik:RadMenu ID="RadMenu2" CssClass="sidebar" Flow="Vertical" runat="server" >
                                 <Items>
                                     <telerik:RadMenuItem Text="Menu item 1" />
                                     <telerik:RadMenuItem IsSeparator="true" />
@@ -78,7 +78,7 @@
                                     <telerik:RadMenuItem IsSeparator="true" />
                                     <telerik:RadMenuItem Text="Menu item 8" />
                                 </Items>
-                            </telerik:RadMenu>
+                            </telerik:RadMenu>--%>
                         </telerik:LayoutColumn>
 
                         <%--Content--%>

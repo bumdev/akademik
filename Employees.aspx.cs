@@ -43,10 +43,10 @@ namespace akademik_app
         {
             if ((e.Item is GridEditFormItem) && (e.Item.IsInEditMode))
             {
-                GridEditFormItem editItem = (GridEditFormItem)e.Item;
-                RadComboBox rc = (RadComboBox)editItem["ps"].Controls[0];
-                rc.Width = Unit.Pixel(400);
-                rc.Filter = RadComboBoxFilter.Contains;
+                //GridEditFormItem editItem = (GridEditFormItem)e.Item;
+                //RadComboBox rc = (RadComboBox)editItem["ps"].Controls[0];
+                //rc.Width = Unit.Pixel(400);
+                //rc.Filter = RadComboBoxFilter.Contains;
             }
             if (e.Item is GridDataItem)
             {
@@ -75,26 +75,36 @@ namespace akademik_app
         {
             GridEditFormInsertItem insertedItem = (GridEditFormInsertItem)e.Item;
 
-            if (e.Item.OwnerTableView.Name == "Archive")
+            if (e.Item.OwnerTableView.Name == "Employees")
             {
                 Entities.User u = GetCurrentUser();
 
-                dsJournal.InsertParameters.Add(new Parameter("RegNumber", DbType.String, (insertedItem["RegNumber"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("Correspondent", DbType.String, (insertedItem["Correspondent"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("RegNumber", DbType.String, (insertedItem["RegNumber"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("Correspondent", DbType.String, (insertedItem["Correspondent"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("Address", DbType.String, (insertedItem["Address"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("RegNumberJuridical", DbType.String, (insertedItem["RegNumberJuridical"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("DateJuridical", DbType.DateTime, (insertedItem["date_juridical"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
+                //dsJournal.InsertParameters.Add(new Parameter("CodeFrom", DbType.String, (insertedItem["CodeFrom"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("PlaneDate", DbType.DateTime, (insertedItem["date_plane"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
+                //dsJournal.InsertParameters.Add(new Parameter("DateExecution", DbType.DateTime, (insertedItem["date_exec"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
+                //dsJournal.InsertParameters.Add(new Parameter("TypeLetter", DbType.String, (insertedItem["TypeLetter"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("TextResolution", DbType.String, (insertedItem["TextResolution"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("DateView", DbType.DateTime, (insertedItem["date_view"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
+                //dsJournal.InsertParameters.Add(new Parameter("Viewer", DbType.String, (insertedItem["Viewer"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("RegNumberOut", DbType.String, (insertedItem["RegNumberOut"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("TypeMail", DbType.String, (insertedItem["TypeMail"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("Comment", DbType.String, (insertedItem["Comment"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("ResponsibleContractorID", DbType.Int32, (insertedItem["rc"].Controls[0] as RadComboBox).SelectedValue));
+
+                dsJournal.InsertParameters.Add(new Parameter("name", DbType.String, (insertedItem["name"].Controls[0] as TextBox).Text));
+                dsJournal.InsertParameters.Add(new Parameter("sex", DbType.String, (insertedItem["sex"].Controls[0] as TextBox).Text));
+                //dsJournal.InsertParameters.Add(new Parameter("name", DbType.String, (insertedItem["name"].Controls[0] as TextBox).Text));
+                dsJournal.InsertParameters.Add(new Parameter("position", DbType.String, (insertedItem["position"].Controls[0] as TextBox).Text));
+                dsJournal.InsertParameters.Add(new Parameter("phone", DbType.String, (insertedItem["phone"].Controls[0] as TextBox).Text));
+                dsJournal.InsertParameters.Add(new Parameter("growth", DbType.String, (insertedItem["growth"].Controls[0] as TextBox).Text));
+                dsJournal.InsertParameters.Add(new Parameter("birthday", DbType.DateTime,(insertedItem["birthday"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
                 dsJournal.InsertParameters.Add(new Parameter("Address", DbType.String, (insertedItem["Address"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("RegNumberJuridical", DbType.String, (insertedItem["RegNumberJuridical"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("DateJuridical", DbType.DateTime, (insertedItem["date_juridical"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
-                dsJournal.InsertParameters.Add(new Parameter("CodeFrom", DbType.String, (insertedItem["CodeFrom"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("PlaneDate", DbType.DateTime, (insertedItem["date_plane"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
-                dsJournal.InsertParameters.Add(new Parameter("DateExecution", DbType.DateTime, (insertedItem["date_exec"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
-                dsJournal.InsertParameters.Add(new Parameter("TypeLetter", DbType.String, (insertedItem["TypeLetter"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("TextResolution", DbType.String, (insertedItem["TextResolution"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("DateView", DbType.DateTime, (insertedItem["date_view"].Controls[0] as RadDatePicker).SelectedDate.ToString()));
-                dsJournal.InsertParameters.Add(new Parameter("Viewer", DbType.String, (insertedItem["Viewer"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("RegNumberOut", DbType.String, (insertedItem["RegNumberOut"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("TypeMail", DbType.String, (insertedItem["TypeMail"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("Comment", DbType.String, (insertedItem["Comment"].Controls[0] as TextBox).Text));
-                dsJournal.InsertParameters.Add(new Parameter("ResponsibleContractorID", DbType.Int32, (insertedItem["rc"].Controls[0] as RadComboBox).SelectedValue));
+
 
 
                 dsJournal.Insert();
@@ -106,7 +116,7 @@ namespace akademik_app
 
         protected void radgrid_DeleteCommand(object sender, GridCommandEventArgs e)
         {
-            if (e.Item.OwnerTableView.Name == "Archive")
+            if (e.Item.OwnerTableView.Name == "Employees")
             {
                 string s = e.Item.OwnerTableView.DataKeyValues[e.Item.ItemIndex]["ID"].ToString();
                 dsJournal.DeleteParameters.Add(new Parameter("ID", DbType.Int32, s));

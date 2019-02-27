@@ -33,10 +33,10 @@
     </ExportSettings>
       
         <MasterTableView EditMode="PopUp" IsFilterItemExpanded="True" EditFormSettings-PopUpSettings-Width="900px" DataKeyNames="ID" Width="100%" CommandItemDisplay="Top" AllowAutomaticUpdates="true" Name="Dossier"  AllowFilteringByColumn="true" >
-            <CommandItemSettings ShowAddNewRecordButton="false" ShowRefreshButton="False" />
+            <CommandItemSettings ShowAddNewRecordButton="true" ShowRefreshButton="False" />
             
             <Columns>
-                <%--<telerik:GridEditCommandColumn UniqueName="EditCommandColumn" ButtonType="ImageButton"></telerik:GridEditCommandColumn>--%> 
+                <telerik:GridEditCommandColumn UniqueName="EditCommandColumn" ButtonType="ImageButton"></telerik:GridEditCommandColumn> 
                 
                 <telerik:GridDropDownColumn UniqueName="ep" HeaderStyle-HorizontalAlign="Center" DropDownControlType="RadComboBox" DataField="employee_id" HeaderText="Сотрудник" DataSourceID="dsEmployees" 
                     ListTextField="name" FilterControlWidth="300" ListValueField="id" ItemStyle-Wrap="true" ItemStyle-Width="300" HeaderStyle-Width="300">
@@ -61,7 +61,7 @@
                 </telerik:GridDropDownColumn>
                 <%--<telerik:GridBoundColumn DataField="name" runat="server" HeaderText="ФИО" AllowFiltering="false"></telerik:GridBoundColumn>--%>
                 <%--<telerik:GridBoundColumn DataField="sex" runat="server" HeaderText="Пол"  AllowFiltering="false"></telerik:GridBoundColumn>--%>
-                <telerik:GridBoundColumn DataField="position" runat="server" HeaderText="Должность"  AllowFiltering="false"></telerik:GridBoundColumn>
+                <telerik:GridBoundColumn DataField="position" runat="server" ReadOnly="true" HeaderText="Должность"  AllowFiltering="false"></telerik:GridBoundColumn>
                 <%--<telerik:GridBoundColumn DataField="phone" runat="server" HeaderText="Телефон"  AllowFiltering="false"></telerik:GridBoundColumn>--%>
                 <%--<telerik:GridBoundColumn DataField="growth" runat="server" HeaderText="Рост"  AllowFiltering="false"></telerik:GridBoundColumn>--%>
                 <telerik:GridBoundColumn DataField="comment" runat="server" HeaderText="Комментарии"  AllowFiltering="false"></telerik:GridBoundColumn>
@@ -74,7 +74,7 @@
                 
                 
 
-                <%--<telerik:GridButtonColumn runat="server" CommandName="Delete" Text="Delete" ButtonType="ImageButton" ConfirmText="Вы точно хотите удалить?" />--%>
+                <telerik:GridButtonColumn runat="server" CommandName="Delete" Text="Delete" ButtonType="ImageButton" ConfirmText="Вы точно хотите удалить?" />
                 
         </Columns>
         <EditFormSettings>
@@ -94,6 +94,9 @@
 
 <asp:SqlDataSource ID="dsJournal" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionInfo %>" 
     SelectCommand="RetrieveDossier" SelectCommandType="StoredProcedure" 
+    UpdateCommand="UpdateDossier" UpdateCommandType="StoredProcedure"
+    InsertCommand="CreateDossier" InsertCommandType="StoredProcedure"
+    DeleteCommand="DeleteDossier" DeleteCommandType="StoredProcedure"
     >
 </asp:SqlDataSource>
 </div>

@@ -32,11 +32,11 @@
     <Pdf DefaultFontFamily="Arial Unicode MS" PageTopMargin="2" PageLeftMargin="2" PageRightMargin="2" PageBottomMargin="2"/>
     </ExportSettings>
       
-        <MasterTableView EditMode="PopUp" IsFilterItemExpanded="True" EditFormSettings-PopUpSettings-Width="900px" DataKeyNames="ID" Width="100%" CommandItemDisplay="Top" AllowAutomaticUpdates="true" Name="Archive"  AllowFilteringByColumn="true" >
-            <CommandItemSettings ShowAddNewRecordButton="false" ShowRefreshButton="False" />
+        <MasterTableView EditMode="PopUp" IsFilterItemExpanded="True" EditFormSettings-PopUpSettings-Width="900px" DataKeyNames="ID" Width="100%" CommandItemDisplay="Top" AllowAutomaticUpdates="true" Name="Employees"  AllowFilteringByColumn="true" >
+            <CommandItemSettings ShowAddNewRecordButton="true" ShowRefreshButton="False" />
             
             <Columns>
-                <%--<telerik:GridEditCommandColumn UniqueName="EditCommandColumn" ButtonType="ImageButton"></telerik:GridEditCommandColumn>--%> 
+                <telerik:GridEditCommandColumn UniqueName="EditCommandColumn" ButtonType="ImageButton"></telerik:GridEditCommandColumn> 
                 
                 <%--<telerik:GridDropDownColumn UniqueName="ep" HeaderStyle-HorizontalAlign="Center" DropDownControlType="RadComboBox" DataField="employee_id" HeaderText="Сотрудник" DataSourceID="dsEmployees" 
                     ListTextField="name" FilterControlWidth="300" ListValueField="id" ItemStyle-Wrap="true" ItemStyle-Width="300" HeaderStyle-Width="300">
@@ -72,7 +72,7 @@
                 
                 
 
-                <%--<telerik:GridButtonColumn runat="server" CommandName="Delete" Text="Delete" ButtonType="ImageButton" ConfirmText="Вы точно хотите удалить?" />--%>
+                <telerik:GridButtonColumn runat="server" CommandName="Delete" Text="Delete" ButtonType="ImageButton" ConfirmText="Вы точно хотите удалить?" />
                 
         </Columns>
         <EditFormSettings>
@@ -91,7 +91,10 @@
 
 
 <asp:SqlDataSource ID="dsJournal" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionInfo %>" 
-    SelectCommand="RetrieveEmployees" SelectCommandType="StoredProcedure" 
+    SelectCommand="RetrieveEmployees" SelectCommandType="StoredProcedure"
+    UpdateCommand="Update Employees" UpdateCommandType="StoredProcedure"
+    InsertCommand="CreateEmployees" InsertCommandType="StoredProcedure" 
+    DeleteCommand="DeleteEmplyees" DeleteCommandType="StoredProcedure"
     >
 </asp:SqlDataSource>
 </div>
